@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --graphite: #14171C;
+    --steel: #1B1F26;
+    --steel-line: #2A2F3A;
+    --bone: #E7E4DC;
+    --bone-dim: #9A9C9E;
+    --clearance-amber: #F2A93B;
+    --denied-red: #E5484D;
+    --granted-green: #3FB27F;
+  }
+
+  body {
+    background-color: var(--graphite);
+    color: var(--bone);
+  }
+
+  /* Custom focus style for accessibility */
+  *:focus-visible {
+    outline: 2px solid var(--clearance-amber);
+    outline-offset: 2px;
+  }
+}
