@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AccessGate — System Identity & Access Control Console
 
 AccessGate is a full-stack Identity & Access Management (IAM) platform built end-to-end. It centralizes user authentication, authorization, and role-based access control (RBAC). 
@@ -45,10 +46,91 @@ sequenceDiagram
     Server-->>Client: httpOnly Cookie (Rotated RefreshToken) + JSON (New AccessToken)
     Client->>Server: Retry GET /users (Header: Bearer NewAccessToken)
     Server-->>Client: 200 OK
+=======
+# AccessGate
+
+### Secure identity. Simplified access management.
+
+AccessGate is a full-stack Identity & Access Management (IAM) platform that centralizes user authentication, authorization, and access control across enterprise applications. It enables organizations to securely manage users, roles, permissions, and application access through a unified administration portal.
+
+---
+
+## Project Status
+
+🚧 Under Development
+
+---
+
+## Problem Statement
+
+Managing user identities and permissions across multiple enterprise applications can become complex and difficult to maintain. Organizations require a centralized solution to enforce secure authentication, role-based authorization, and access governance.
+
+AccessGate provides a single platform for managing users, permissions, authentication, and audit logs.
+
+---
+
+## Key Features
+
+- Secure User Authentication
+- JWT Authentication
+- Role-Based Access Control (RBAC)
+- User Management
+- Role & Permission Management
+- Protected Routes
+- Admin Dashboard
+- Audit Logs
+- Password Reset
+- Search & Filtering
+- Session Management
+
+---
+
+## Tech Stack
+
+### Frontend
+- React.js
+- TypeScript
+- Tailwind CSS
+
+### Backend
+- Node.js
+- Express.js
+
+### Database
+- MongoDB
+
+### Authentication
+- JWT
+- bcrypt
+
+### Others
+- REST APIs
+- Docker
+- Git
+- GitHub
+
+---
+
+## System Architecture
+
+```
+React Frontend
+        │
+ REST APIs
+        │
+Express Backend
+        │
+JWT Authentication
+        │
+Role-Based Access Control
+        │
+MongoDB Database
+>>>>>>> bc45236fa1764f3d04d9f1aba0635c3ea9453461
 ```
 
 ---
 
+<<<<<<< HEAD
 ## 2. Design System and Visual Stance
 
 AccessGate deliberately rejects generic "AI-designed admin dashboard templates" (no soft rounded cards, no blue/purple gradients, no glowing blobs, no decorative empty spaces). Instead, it implements a strict, industrial theme:
@@ -149,3 +231,33 @@ npm run dev      # Launches dev client server on http://localhost:5173
 2.  Navigate to the sign-up panel on `http://localhost:5173/register`.
 3.  **Bootstrap Rule**: The first registered account on the database is automatically assigned **Super Admin** clearance, immediately unlocking all administrative control modules.
 4.  Subsequent registrations default to standard **User** status with zero administrative privileges. Use the Super Admin account to customize and assign roles via the **User Control** console.
+=======
+## Future Scope
+
+- Multi-Factor Authentication (MFA)
+- Single Sign-On (SSO)
+- OAuth 2.0 Integration
+- LDAP / Active Directory Integration
+- Email Verification
+- Login Activity Dashboard
+- Security Analytics
+- Cloud Deployment
+
+---
+
+## Skills Demonstrated
+
+- Authentication & Authorization
+- Role-Based Access Control
+- REST API Development
+- Database Design
+- Enterprise Software Development
+- Secure Backend Development
+- Full Stack Development
+
+---
+
+## Author
+
+Pavankumar Balijireddi
+>>>>>>> bc45236fa1764f3d04d9f1aba0635c3ea9453461
